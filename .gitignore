@@ -1,0 +1,11 @@
+F107data/
+test_c++_fortran/
+*.o
+*.f90
+*.mod
+*.txt
+*.png
+*.dat
+main
+a.out
+libnrlmsise*
