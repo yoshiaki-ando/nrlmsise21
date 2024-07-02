@@ -45,7 +45,7 @@ install: $(TARGET)
 	@if [ ! -d $(SHARE_DIR) ]; then \
 		mkdir -p $(SHARE_DIR); \
 	fi
-	cp $(
+	cp $(PARM) $(SHARE_DIR)
 
 main: nrlmsis21.o $(OBJS)
 	g++ -o $@ nrlmsis21.o -lgfortran $(LIB_OPTS) -L$(LIB_DIR) -lnrlmsise21$(LIB_SUFFIX)
