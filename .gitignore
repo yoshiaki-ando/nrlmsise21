@@ -2,6 +2,7 @@ F107data/
 test_c++_fortran/
 *.o
 *.f90
+!wrap_msisinit.f90
 *.mod
 *.txt
 *.png
@@ -9,3 +10,4 @@ test_c++_fortran/
 main
 a.out
 libnrlmsise*
+msis21.parm
