@@ -13,10 +13,9 @@ SHARE_DIR = $(PREFIX)/share/msis21
 
 HEADERS = Msis21.h
 
-OBJS = msis_gfn.o msis_utils.o msis_tfn.o msis_constants.o msis_init.o msis2.1_test.o msis_calc.o \
-msis_dfn.o msis_gtd8d.o \
-twice.o wrap_msisinit.o \
-Msis21.o
+OBJS = msis_gfn.o msis_utils.o msis_tfn.o msis_dfn.o \
+msis_constants.o msis_init.o msis2.1_test.o msis_calc.o \
+msis_gtd8d.o twice.o wrap_msisinit.o Msis21.o
 
 PARAM = msis21.parm
 
