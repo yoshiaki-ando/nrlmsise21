@@ -3,6 +3,7 @@ test_c++_fortran/
 *.o
 *.f90
 !wrap_msisinit.f90
+!msis2.1_test_modified.f90
 *.mod
 *.txt
 *.png

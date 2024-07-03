@@ -14,7 +14,7 @@ SHARE_DIR = $(PREFIX)/share/msis21
 HEADERS = Msis21.h
 
 OBJS = msis_gfn.o msis_utils.o msis_tfn.o msis_dfn.o \
-msis_constants.o msis_init.o msis2.1_test.o msis_calc.o \
+msis_constants.o msis_init.o msis2.1_test_modified.o msis_calc.o \
 msis_gtd8d.o wrap_msisinit.o Msis21.o
 
 PARAM = msis21.parm
@@ -32,6 +32,9 @@ all: $(TARGET) main
 
 $(TARGET): $(OBJS) $(HEADERS)
 	gfortran -shared -o $@ $(OBJS)
+
+%.f90: %.F90
+	mv $*.F90 $*.f90
 
 install: $(TARGET)
 	@if [ ! -d $(LIB_DIR) ]; then \
